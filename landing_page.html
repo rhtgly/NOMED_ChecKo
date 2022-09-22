@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checko Landing Page</title>
+
+    <link rel="stylesheet" href="tigley.css">
+
+<style>
+    /* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to left, rgba(217,217,217,0), rgb(229,194,238,0.35));
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 180px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li {
+    list-style: none;
+
+}
+header ul li a {
+    display: inline-block;
+    color: black;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#content{
+    transform: (0);
+    transition: all 0.5s ease-in-out;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2{
+    color: rgb(32, 31, 31);
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 600;
+    position: static;
+    
+}
+.content .textBox h2 span{
+    color: #9c4d50;
+    font-weight: bold;
+}
+.content .textBox p{
+    color: #414141;
+    opacity: 50%;
+
+}
+.content .textBox a{
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+    padding: 8px 20px;
+    background-image: linear-gradient(to left, rgba(29,107,111,0), rgb(229,107,111));
+    color: #ffffff;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: lighter;
+    width: 7cm;
+    height: 1.3cm;
+    border-radius: 10px;
+    box-shadow: inset;
+    box-shadow: 3px 5px 5px #d7d7d7;
+}
+.imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+    transform: scale(0);
+    transition: all 1.0s 0.5s ease;
+}
+.imgBox img{
+    max-width: 900px;
+    
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(234,172,139,0), rgb(234,172,139));
+    clip-path: circle(600px at right);
+}
+
+.after-transition {
+    transform: scale(1);
+  }
+</style>
+
+</head>
+<body style="overflow: hidden;">
+    <div class="circle" id=""></div>
+    <section>
+        <header>
+            <a href="#" > <img src="assets/imgs/Logo_ChecKo.png" class="logo" id="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </header>
+        <div class="content" id="content">
+            <div class="textBox" id="txtBox">
+                <h2><span>CHECKO:</span> <br> Human Resource <br> Information</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="login.html" >Get Started</a>
+            </div>
+        </div>
+        <div class="imgBox" id="imgBox">
+            <img src="assets/imgs/banner.png"
+        </div>
+    </section>
+</body>
+<script>
+window.onload = (event) => {
+  let ImgElem = document.getElementById("imgBox");
+  ImgElem.classList.add("after-transition");
+};
+</script>
+</html>
