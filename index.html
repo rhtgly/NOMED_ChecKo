@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body onload="startTime()">
     <!-- =============== Navigation ================ -->
     <div class="container">
         <div class="navigation">
@@ -120,12 +120,12 @@
             <div class="cardBox">
                 <div class="card">
                     <div>
-                        <div class="numbers">1,503</div>
+                        <div class="numbers">1,504</div>
                         <div class="cardName">Lates</div>
                     </div>
 
                     <div class="iconBx">
-                        <ion-icon name="eye-outline"></ion-icon>
+                        <ion-icon name="alarm-outline"></ion-icon>
                     </div>
                 </div>
 
@@ -136,7 +136,7 @@
                     </div>
 
                     <div class="iconBx">
-                        <ion-icon name="cart-outline"></ion-icon>
+                        <ion-icon name="help-circle-outline"></ion-icon>
                     </div>
                 </div>
 
@@ -147,7 +147,7 @@
                     </div>
 
                     <div class="iconBx">
-                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                        <ion-icon name="log-out-outline"></ion-icon>
                     </div>
                 </div>
 
@@ -165,6 +165,40 @@
 
             <!-- ================ Time In Time Out ================= -->
             
+           <div class="wrapper">
+            <div class="timeCardBox">
+                <div class="cardIn">
+                    <div>
+                        <div class="cardName">TIME-IN</div>
+                        <div class="time" id="timeIn">8: 57: 23 AM</div>
+
+                        <a href="#" class="btnRecord" id="btnTimeIn">RECORD</a>
+
+                    </div>
+                </div>
+
+                <div class="cardOut">
+                    <div>
+                        <div class="cardName">TIME-OUT</div>
+                        <div class="time" id="timeOut"></div>
+                        
+                        <a href="#" class="btnRecord">RECORD</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================ Leave Request ================= -->
+            <div class="unknownCardBox">
+                <div class="unknownCard">
+                    <div>
+                        <div class="cardName"><u>QUOTE OF THE DAY</u></div>
+                        <div class="quote"><i>"If you start today to do the right thing, you are already a success even if it doesn't show yet."</i></div>
+                        <!-- <a href="#" class="btnRecord">SUBMIT</a> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <!-- =========== Scripts =========  -->
     <script src="assets/js/main.js"></script>
