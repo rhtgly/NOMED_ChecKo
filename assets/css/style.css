@@ -12,6 +12,11 @@
 :root {
   --sidebar-color: linear-gradient(to bottom right, #F2AE98, #ED7D71);
   --peach: #FF756C;
+  --lightpeach: #FAE6E3;
+  --red: #AE473A;
+  --brown: #BB9A97;
+  --blue: #A6B6D0;
+  --darkblue: #4F5763;
   --white: #fff;
   --gray: #f5f5f5;
   --black1: #222;
@@ -250,7 +255,7 @@ body {
 }
 
 .cardBox .card .iconBx {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: var(--black2);
 }
 
@@ -262,6 +267,122 @@ body {
 .cardBox .card:hover .iconBx {
   color: var(--white);
 }
+
+/* ======================= Time & Leave Cards ====================== */
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.timeCardBox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(2,2fr);
+  grid-gap: 30px;
+}
+
+.timeCardBox .cardIn {
+    position: relative;
+    background: var(--lightpeach);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.timeCardBox .cardOut {
+  position: relative;
+  background: var(--brown);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.timeCardBox .cardIn .cardName {
+    color: var(--red);
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 5px;
+}
+
+.timeCardBox .cardIn .time {
+    position: relative;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: var(--red);
+}
+
+.timeCardBox .cardOut .cardName {
+  color: var(--lightpeach);
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: 5px;
+}
+
+.timeCardBox .cardOut .time {
+  position: relative;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: var(--lightpeach);
+}
+
+.timeCardBox .btnRecord {
+  position:relative;
+  padding: 5px 10px;
+  font-weight: 500;
+  background: #E0AE90;
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 6px;
+}
+
+.timeCardBox .btnRecord:hover {
+  background: var(--peach);
+}
+
+.unknownCardBox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+}
+
+.unknownCardBox .unknownCard {
+  position: relative;
+  background: var(--blue);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.unknownCardBox .unknownCard .cardName {
+  color: var(--darkblue);
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: 5px;
+}
+
+.unknownCardBox .unknownCard .quote {
+  position: relative;
+  font-weight: 500;
+  font-size: 3rem;
+  font-family: 'Georgia', serif;
+  padding-top: 30px;
+  color: var(--white);
+  text-align: justify;
+}
+
 
 /* ================== Order Details List ============== */
 .details {
